@@ -74,7 +74,7 @@ export function RecipeSearchList({ scope, emptyTitle, emptyDescription, header }
         </View>
       }
       ListEmptyComponent={
-        loading ? null : (
+        loading ? undefined : (
           <EmptyState
             title={debouncedQuery ? 'Nic nenalezeno' : emptyTitle}
             description={debouncedQuery ? 'Zkuste jiný výraz.' : emptyDescription}

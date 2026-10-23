@@ -135,7 +135,7 @@ export default function ShoppingScreen() {
         </Pressable>
       )}
       ListEmptyComponent={
-        loading ? null : (
+        loading ? undefined : (
           <EmptyState
             title="Seznam je prázdný"
             description="Přidejte položku ručně, nebo suroviny z detailu receptu."
@@ -143,7 +143,7 @@ export default function ShoppingScreen() {
         )
       }
       ListFooterComponent={
-        hasChecked ? <Button title="Smazat koupené" variant="secondary" onPress={clearChecked} /> : null
+        hasChecked ? <Button title="Smazat koupené" variant="secondary" onPress={clearChecked} /> : undefined
       }
     />
   );
