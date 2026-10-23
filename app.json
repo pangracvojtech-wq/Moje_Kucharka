@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Moje Kuchařka",
+    "slug": "moje-kucharka",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "mojekucharka",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-splash-screen"
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
+  }
+}
